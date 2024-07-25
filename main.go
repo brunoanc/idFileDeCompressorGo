@@ -61,6 +61,7 @@ func compressEntities(uncompressedEntities []byte) []byte {
 	return compressedEntities[:(result + 16)]
 }
 
+// Prints help message
 func printHelp() {
 	fmt.Print("Usage: idFileDeCompressor [options] <src> <dest>\n\n")
 	fmt.Print("Options:\n")
