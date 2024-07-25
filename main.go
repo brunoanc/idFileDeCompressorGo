@@ -67,7 +67,7 @@ func printHelp() {
 	fmt.Print("\t-c, --compress\t\tCompress an uncompressed .entities file.\n\n")
 	fmt.Print("Example: idFileDeCompressor D:\\e1m1.entities D:\\e1m1.dec\n\n")
 	fmt.Print("If no option is provided, the tool will attempt to auto-detect the action to perform.\n")
-	fmt.Println("If no destination path is provided, the tool will use the source path with an added extension.")
+	fmt.Println("If no destination path is provided, the tool will overwrite the source file.")
 }
 
 // Main function
@@ -132,11 +132,7 @@ func main() {
 
 	// If no output path was set, create one
 	if outputFile == "" {
-		if *compress {
-			outputFile = inputFile + ".entities"
-		} else {
-			outputFile = inputFile + ".dec"
-		}
+		outputFile = inputFile
 	}
 
 	// Compress or decompress

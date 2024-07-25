@@ -11,7 +11,7 @@ idFileDeCompressor [options] <src> <dest>
 
 The tool will attempt to auto-detect the action to perform. You can override this behaviour with the `--decompress` and `--compress` flags.
 
-If no destination path is provided, the file will be written to the source path with a different extension (`.dec` if decompressing and `.entities` if compressing).
+If no destination path is provided, it will overwrite the source file.
 
 ## Compiling
 The project requires the [go toolchain](https://go.dev/dl/) to be compiled. Additionally, a GCC toolchain such as MinGW is required on Windows.
