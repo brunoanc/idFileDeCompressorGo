@@ -37,7 +37,7 @@ func decompressEntities(compressedEntities []byte) []byte {
 
 	// Decompress the data using Kraken
 	uncompressedData := make([]byte, uncompressedSize+64)
-	result := int(C.Kraken_Decompress((*C.uchar)(&compressedEntities[16]), C.size_t(compressedSize), (*C.uchar)(&uncompressedData[0]), C.size_t(uncompressedSize)))
+	result := C.Kraken_Decompress((*C.uchar)(&compressedEntities[16]), C.size_t(compressedSize), (*C.uchar)(&uncompressedData[0]), C.size_t(uncompressedSize))
 	if uint64(result) != uncompressedSize {
 		return nil
 	}
