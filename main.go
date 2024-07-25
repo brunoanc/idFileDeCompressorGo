@@ -1,6 +1,6 @@
 /*
-* This file is part of idFileDeCompressorGo (https://github.com/PowerBall253/idFileDeCompressorGo).
-* Copyright (C) 2023 PowerBall253
+* This file is part of idFileDeCompressorGo (https://github.com/brunoanc/idFileDeCompressorGo).
+* Copyright (C) 2023 Bruno Ancona
 *
 * idFileDeCompressorGo is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by

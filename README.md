@@ -1,5 +1,5 @@
 # idFileDeCompressor
-![Build Status](https://github.com/PowerBall253/idFileDeCompressorGo/actions/workflows/test.yml/badge.svg)
+![Build Status](https://github.com/brunoanc/idFileDeCompressorGo/actions/workflows/test.yml/badge.svg)
 
 Tool to decompress and recompress `.entities` files, allowing level editing.
 
