@@ -19,13 +19,13 @@ The project requires the [go toolchain](https://go.dev/dl/) to be compiled. Addi
 To compile, run:
 
 ```
-go build -o idRehash -ldflags="-s -w" .
+go build -o idFileDeCompressor -ldflags="-s -w" .
 ```
 
 Additionally, you may use [UPX](https://upx.github.io/) to compress the binary:
 
 ```
-upx --best idRehash
+upx --best idFileDeCompressor
 ```
 
 ## Credits
